@@ -126,7 +126,7 @@ submitBtn.onclick = function() {
     let timeInSecsEl = document.getElementById('timer');
     let time = timeInSecsEl.textContent;
 
-    if (quoteElVal === quoteInputElVal) {
+    if (quoteElVal == quoteInputElVal) {
         clearInterval(uniqueId);
         resultTextEl.textContent = "You typed in " + (time);
     } else {
